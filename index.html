@@ -1,0 +1,23 @@
+<html>
+	<header>
+		<?php
+			session_start();
+			if (isset($_SESSION['user_username']) {
+				header('Location: ./page/menu.html');
+			}
+		?>
+	</header>
+
+	<body>
+		<h1>Welcome to the Stock System</h1>
+		<h3>Please Log In:</h3>
+		<br>
+		<form action="./content/login.php" method="post">
+			<label for="username">Username: </label>
+			<input id="username" type="text">
+			<br>
+			<label for="password">Password: </label>
+			<input id="password" type="password">
+		</form>
+	</body>
+</html>
